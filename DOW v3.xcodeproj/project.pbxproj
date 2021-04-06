@@ -15,6 +15,7 @@
 		372E4C7B25BFAE54001EAAF9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 372E4C7925BFAE54001EAAF9 /* LaunchScreen.storyboard */; };
 		372E4C8625BFAE55001EAAF9 /* DOW_v3Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372E4C8525BFAE55001EAAF9 /* DOW_v3Tests.swift */; };
 		372E4C9125BFAE55001EAAF9 /* DOW_v3UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372E4C9025BFAE55001EAAF9 /* DOW_v3UITests.swift */; };
+		372E4CA625CCCABB001EAAF9 /* BLEControlFramework in Resources */ = {isa = PBXBuildFile; fileRef = 372E4CA525CCCABB001EAAF9 /* BLEControlFramework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +32,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 372E4C6A25BFAE51001EAAF9;
 			remoteInfo = "DOW v3";
+		};
+		372E4CAE25CCCAC7001EAAF9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 372E4CAA25CCCAC7001EAAF9 /* BLEControlFramework.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9777A0A41F25041000021A92;
+			remoteInfo = BLEControlFramework;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -49,6 +57,8 @@
 		372E4C8C25BFAE55001EAAF9 /* DOW v3UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DOW v3UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		372E4C9025BFAE55001EAAF9 /* DOW_v3UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DOW_v3UITests.swift; sourceTree = "<group>"; };
 		372E4C9225BFAE55001EAAF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		372E4CA525CCCABB001EAAF9 /* BLEControlFramework */ = {isa = PBXFileReference; lastKnownFileType = folder; path = BLEControlFramework; sourceTree = "<group>"; };
+		372E4CAA25CCCAC7001EAAF9 /* BLEControlFramework.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = BLEControlFramework.xcodeproj; path = "../../Downloads/BLEControl-master/BLEControlFramework/BLEControlFramework.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +89,8 @@
 		372E4C6225BFAE51001EAAF9 = {
 			isa = PBXGroup;
 			children = (
+				372E4CAA25CCCAC7001EAAF9 /* BLEControlFramework.xcodeproj */,
+				372E4CA525CCCABB001EAAF9 /* BLEControlFramework */,
 				372E4C6D25BFAE51001EAAF9 /* DOW v3 */,
 				372E4C8425BFAE55001EAAF9 /* DOW v3Tests */,
 				372E4C8F25BFAE55001EAAF9 /* DOW v3UITests */,
@@ -126,6 +138,14 @@
 				372E4C9225BFAE55001EAAF9 /* Info.plist */,
 			);
 			path = "DOW v3UITests";
+			sourceTree = "<group>";
+		};
+		372E4CAB25CCCAC7001EAAF9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				372E4CAF25CCCAC7001EAAF9 /* BLEControlFramework.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,6 +237,12 @@
 			mainGroup = 372E4C6225BFAE51001EAAF9;
 			productRefGroup = 372E4C6C25BFAE51001EAAF9 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 372E4CAB25CCCAC7001EAAF9 /* Products */;
+					ProjectRef = 372E4CAA25CCCAC7001EAAF9 /* BLEControlFramework.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				372E4C6A25BFAE51001EAAF9 /* DOW v3 */,
@@ -226,12 +252,23 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		372E4CAF25CCCAC7001EAAF9 /* BLEControlFramework.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = BLEControlFramework.framework;
+			remoteRef = 372E4CAE25CCCAC7001EAAF9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		372E4C6925BFAE51001EAAF9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				372E4C7B25BFAE54001EAAF9 /* LaunchScreen.storyboard in Resources */,
+				372E4CA625CCCABB001EAAF9 /* BLEControlFramework in Resources */,
 				372E4C7825BFAE54001EAAF9 /* Assets.xcassets in Resources */,
 				372E4C7625BFAE51001EAAF9 /* Main.storyboard in Resources */,
 			);
